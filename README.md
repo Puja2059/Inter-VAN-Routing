@@ -40,7 +40,6 @@ Virtual networks were established on the Catalyst 2960 switch CLI, assigning acc
 Instead of using individual physical interfaces for each subnet, the router’s single physical `gi0/0` interface was activated and provisioned into distinct logical sub-interfaces to handle tagged VLAN packets:
 ![Router Configuration Terminal](router0.png)
 
-```text
 ! Enabling the physical interface
 Router(config)# interface gi0/0
 Router(config-if)# no shutdown
@@ -64,6 +63,7 @@ Executing a ping from ENG_PC1 to ENG_PC2 (192.168.10.12) confirmed uninterrupted
 Executing a cross-boundary ping from ENG_PC1 to HR_PC1 (192.168.20.11) verified that the router sub-interfaces successfully received the tagged frames, routed them across subnets at Layer 3, and returned them.
 
 The initial packet drop observed is standard behavior while the router performs local ARP (Address Resolution Protocol) discovery to map the destination device's physical MAC address.
+![Test  Terminal](ping.png)
 
 
 
