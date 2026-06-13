@@ -40,7 +40,7 @@ Virtual networks were established on the Catalyst 2960 switch CLI, assigning acc
 Instead of using individual physical interfaces for each subnet, the router’s single physical `gi0/0` interface was activated and provisioned into distinct logical sub-interfaces to handle tagged VLAN packets:
 ![Router Configuration Terminal](router0.png)
 
-! Enabling the physical interface
+_! Enabling the physical interface
 Router(config)# interface gi0/0
 Router(config-if)# no shutdown
 
@@ -52,7 +52,7 @@ Router(config-subif)# ip address 192.168.10.1 255.255.255.0
 ! Creating Sub-interface for HR (VLAN 20)
 Router(config)# interface gi0/0.20
 Router(config-subif)# encapsulation dot1Q 20
-Router(config-subif)# ip address 192.168.20.1 255.255.255.0
+Router(config-subif)# ip address 192.168.20.1 255.255.255.0_
 
 
 **Verification & Testing Results**
