@@ -17,7 +17,7 @@ The infrastructure utilizes a modular design separating the broadcast domains of
 * **HR Department:** Ports `FastEthernet0/10` and `FastEthernet0/11`
 * **Router Trunk Uplink:** Switch port `GigabitEthernet0/1` -> Router port `GigabitEthernet0/0`
 
-![Network Topology Diagram](Network-topology.png)
+![Network Topology Diagram](Network_topology.png)
 
 
 ##  Logical Addressing & Segmentation Schema
